@@ -15,19 +15,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # 这里使用了你提到的 v3.4.1 版本
       - name: generate-snake-game-from-github-contribution-grid
         uses: Platane/snk@v3.4.1
         with:
-          # 使用你的 GitHub 用户名
           github_user_name: ${{ github.repository_owner }}
+
+          github_token: ${{ secrets.GH_TOKEN }}
           
-          # 输出文件列表 (必须保留这个 outputs 配置，否则不会生成文件)
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      # 推送步骤保持不变
       - name: Push to Output Branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
