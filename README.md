@@ -1,7 +1,7 @@
 <div align="center">
-  <a href="https://www.gitanimals.org/en_US?utm_medium=image&utm_source=Sayhi-bzb&utm_content=farm">
-    <img
-      src="https://render.gitanimals.org/farms/Sayhi-bzb"
-    />
-  </a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sayhi-bzb/Sayhi-bzb/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sayhi-bzb/Sayhi-bzb/output/github-contribution-grid-snake.svg" />
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Sayhi-bzb/Sayhi-bzb/output/github-contribution-grid-snake.svg" />
+  </picture>
 </div>
